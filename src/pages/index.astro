@@ -1,5 +1,6 @@
 ---
-
+import '../styles/global.css';
+const pageTitle = 'My Astro Website';
 ---
 
 <html lang="en">
@@ -8,18 +9,21 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
+    <title>{pageTitle}</title>
   </head>
   <body>
     <a href="/">Home</a>
     <a href="/about/">About</a>
     <a href="/blog/">Blog</a>
 
-    <h1>My astro website</h1>
+    <h1>{pageTitle}</h1>
     <h2>Homepage</h2>
+    <p>Im working on my astro website. this is the second page this website will update as i learn more about astro!</p>
+
     <p>
-      Im working on my astro website. this is the second page this website will
-      update as i learn more about astro!
+      This is a very long line that should be wrapped by Prettier because it exceeds the printWidth setting of 120
+      characters. Let me make it even longer to demonstrate that the printWidth setting is actually working in this
+      configuration.
     </p>
   </body>
 </html>
