@@ -1,0 +1,21 @@
+---
+const platform = 'github';
+const username = 'EvilDemo';
+
+import Social from './Social.astro';
+---
+
+<style>
+  footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+</style>
+<footer>
+  <p>learn more about me on {platform} <a href={`https://${platform}.com/${username}`}>{username}</a></p>
+  <Social platform="linkedin" username="leoribeiro" />
+  <Social platform="instagram" username="leoribeiro" />
+  <Social platform="twitter" username="leoribeiro" />
+  <Social platform="facebook" username="leoribeiro" />
+</footer>
